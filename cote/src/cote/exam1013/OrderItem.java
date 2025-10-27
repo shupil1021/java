@@ -1,0 +1,16 @@
+package cote.exam1013;
+
+public class OrderItem {
+	public Menu menu;
+	public int quantity;
+	
+	public OrderItem() {}
+	public OrderItem(Menu menu, int quantity) {
+		this.menu = menu;
+		this.quantity = quantity;
+	}
+	
+	public int price() {
+		return menu.price * quantity;
+	}
+}
